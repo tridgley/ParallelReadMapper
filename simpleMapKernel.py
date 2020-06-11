@@ -6,7 +6,9 @@
  
  Final Project: Parallelizing a genome sequence aligner using Numba
 
- Test Usage: python simpleMap.py hg19.chr3.9mb.fa NA12878.ihs.chr3.100kb.1.fastq.tiny --t 30 --log=DEBUG
+ Test Usage: python simpleMapKernel.py hg19.chr3.9mb.fa NA12878.ihs.chr3.100kb.1.fastq.tiny --t 30 --log=DEBUG
+ ** Use --g option to invoke GPU kernel for individual reads as well. Without this flag, the application runs
+    In parallel using Python subprocesses but still invokes GPU kernel for the reference sequence, but not reads.
 """
 import array, sys, numpy, pysam, argparse, logging, time, threading
 logger = logging.getLogger()

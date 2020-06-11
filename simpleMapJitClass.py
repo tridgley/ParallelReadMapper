@@ -6,7 +6,7 @@
 
  Final Project: Parallelizing a genome sequence aligner using Numba
 
- Test Usage: python simpleMap.py hg19.chr3.9mb.fa NA12878.ihs.chr3.100kb.1.fastq.tiny --t 30 --log=DEBUG
+ Test Usage: python simpleMapJitClass.py hg19.chr3.9mb.fa NA12878.ihs.chr3.100kb.1.fastq.tiny --t 30 --log=DEBUG
 
  Code scaffold by Dr. Benedict Paten, Biomolecular Engineering & Bioinformatics, UC Santa Cruz
 """
